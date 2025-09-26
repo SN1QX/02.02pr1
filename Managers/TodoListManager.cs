@@ -11,6 +11,7 @@ namespace _02._02pr1.Managers
     internal class TodoListManager
     {
         private List<TodoItem> _todoList = new List<TodoItem>();
+        private int _nextId;
 
         //Конструктор менеджера
         public TodoListManager()
@@ -37,6 +38,7 @@ namespace _02._02pr1.Managers
             }
             Console.WriteLine("----------------------");
         }
+
         public bool ToggleTaskCompletion(int taskId)
         { 
         var taskToToggle = _todoList.FirstOrDefault (t => t.Id == taskId);
@@ -50,6 +52,7 @@ namespace _02._02pr1.Managers
             {
                 Console.WriteLine($"Task with ID {taskId} not found.");
                 return false;
+
             }
         }
     }

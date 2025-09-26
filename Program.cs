@@ -8,7 +8,9 @@ namespace _02._02pr1
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Your Personal To-Do Manager!");
+
 
             //Создаем экземпляр менеджера списка дел
             var todoManadger = new TodoListManager();
