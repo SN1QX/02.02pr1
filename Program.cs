@@ -8,7 +8,7 @@ namespace _02._02pr1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the To-Do List AppLicatoin!");
+            Console.WriteLine("Welcome to the Enhanced To - Do List!");
 
             //Создаем экземпляр менеджера списка дел
             var todoManadger = new TodoListManager();
